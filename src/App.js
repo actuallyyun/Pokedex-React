@@ -1,5 +1,5 @@
 
-function App() {
+const App = () => {
   return (
     <div>
       <Logo />
@@ -9,7 +9,7 @@ function App() {
   )
 }
 
-function Logo() {
+const Logo = () => {
   return (
     <header>
       <h1>Welcome to the Pokedex</h1>
@@ -19,7 +19,7 @@ function Logo() {
 
 }
 
-function BestPokemon() {
+const BestPokemon = () => {
   return <p>My favorite Pokemon is Pikachu.</p>
 }
 
