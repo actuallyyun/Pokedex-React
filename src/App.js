@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+      <Logo />
+      <h2>
+        <BestPokemon />
+      </h2></div>
+  )
+}
+
+function Logo() {
+  return (
+    <header>
+      <h1>Welcome to the Pokedex</h1>
+      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt=""></img>
+    </header>
+  )
+
+}
+
+function BestPokemon() {
+  return <p>My favorite Pokemon is Pikachu.</p>
 }
 
 export default App;
