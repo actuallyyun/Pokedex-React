@@ -1,26 +1,25 @@
+import Logo from "./Logo"
+import BestPokemon from "./BestPokemon";
+import CaughtPokemon from "./CaughtPokemon";
+
+const abilities = ['Anticipation', 'Adaptability', 'Run-Away']
+const date = new Date().toLocaleDateString()
+
 
 const App = () => {
   return (
     <div>
-      <Logo />
+      <Logo appName="Pokédex" />
       <h2>
-        <BestPokemon />
-      </h2></div>
+        <BestPokemon abilities={abilities} />
+      </h2>
+      <CaughtPokemon date={date} />
+    </div>
   )
 }
 
-const Logo = () => {
-  return (
-    <header>
-      <h1>Welcome to the Pokedex</h1>
-      <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt=""></img>
-    </header>
-  )
 
-}
 
-const BestPokemon = () => {
-  return <p>My favorite Pokemon is Pikachu.</p>
-}
+
 
 export default App;
