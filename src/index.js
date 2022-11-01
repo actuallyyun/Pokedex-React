@@ -3,25 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const TitleComponent = () => {
-  return <h1>I am Title!</h1>
-}
-
-const Name = () => {
-  return <p>My Name is Ttitle</p>
-}
-
-const TtitleName = () => {
-  return (
-    <div>
-      <TitleComponent />
-      <Name />
-    </div>
-  )
-}
 
 root.render(
   <App />
